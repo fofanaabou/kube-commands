@@ -4,3 +4,7 @@
 ```shell
  kubectl get --raw /api/v1/namespaces/default/pods/kiada/proxy/kiada
 ```
+## Log container in kubernetes pod
+```shell
+kubectl logs kiada
+```
