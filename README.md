@@ -8,3 +8,8 @@
 ```shell
 kubectl logs kiada
 ```
+
+## Streaming logs using kubectl logs -f
+```
+kubectl logs kiada -f
+```
