@@ -13,3 +13,9 @@ kubectl logs kiada
 ```
 kubectl logs kiada -f
 ```
+
+## Displaying the timestamp of each logged line
+
+```
+kubectl logs kiada --timestamps=true
+```
