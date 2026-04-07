@@ -24,3 +24,7 @@ kubectl logs kiada --timestamps=true
 ```shell
 kubectl logs kiada --since=25m
 ```
+or
+```shell
+kubectl logs kiada --tail=5
+```
