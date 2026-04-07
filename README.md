@@ -1,1 +1,6 @@
 # kube-commands
+
+## Accessing the application through the API server
+```shell
+ kubectl get --raw /api/v1/namespaces/default/pods/kiada/proxy/kiada
+```
