@@ -10,12 +10,17 @@ kubectl logs kiada
 ```
 
 ## Streaming logs using kubectl logs -f
-```
+```shell
 kubectl logs kiada -f
 ```
 
 ## Displaying the timestamp of each logged line
 
-```
+```shell
 kubectl logs kiada --timestamps=true
+```
+
+## Filter logs (recent)
+```shell
+kubectl logs kiada --since=25m
 ```
