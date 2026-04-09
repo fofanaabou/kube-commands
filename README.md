@@ -28,3 +28,8 @@ or
 ```shell
 kubectl logs kiada --tail=5
 ```
+
+## Run command in container running in Pod
+```shell
+kubectl exec kiada -- ps aux
+```
