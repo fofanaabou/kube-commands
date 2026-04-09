@@ -33,3 +33,12 @@ kubectl logs kiada --tail=5
 ```shell
 kubectl exec kiada -- ps aux
 ```
+
+## Running an interactive shell in container
+```shell
+ kubectl exec -it kiada -c kiada -- sh
+```
+or 
+```shell
+ kubectl exec -it kiada -c kiada -- bash
+```
