@@ -42,3 +42,11 @@ or
 ```shell
  kubectl exec -it kiada -c kiada -- bash
 ```
+## Copy files from pod's container to host machine
+```shell
+kubectl  cp kiada:html/index.html /path/index.html -c kiada
+```
+## Copy files to pod's container 
+```shell
+kubectl cp /tmp/index.html kiada:html/ -c kiada
+```
