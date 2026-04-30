@@ -46,7 +46,27 @@ or
 ```shell
 kubectl  cp kiada:html/index.html /path/index.html -c kiada
 ```
+
 ## Copy files to pod's container 
+
 ```shell
 kubectl cp /tmp/index.html kiada:html/ -c kiada
 ```
+
+## Switch namespace
+
+```shell
+kubectl config set-context --current --namespace kiada-test1
+```
+
+## Create an alias for namespace switching
+
+```shell
+alias kns='kubectl config set-context --current --namespace '
+```
+### Example of usage(alias)
+
+```shell
+kns kiada-test2
+```
+
